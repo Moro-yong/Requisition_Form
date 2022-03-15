@@ -1,22 +1,22 @@
 import React from 'react';
 
-export interface FilterPropsType11 {
+export interface counselingPorpsType {
   changeCounseling(): void;
   toggleState: boolean;
 }
-export interface FilterPropsType4 {
+export interface filterPropsType {
   firestFilterValue: string;
   secondFilterValue: string[];
 }
-export interface FilterPropsType extends FilterPropsType4 {
+export interface filterListPropsType extends filterPropsType {
   changeCounseling(): void;
   toggleState: boolean;
 }
-export interface FilterPropsType3 extends FilterPropsType {
+export interface indexComponentPropsType extends filterListPropsType {
   setFirestFilterValue: React.Dispatch<React.SetStateAction<string>>;
   setSecondFilterValue: React.Dispatch<React.SetStateAction<string[]>>;
 }
-export interface FilterPropsType2 extends FilterPropsType {
+export interface filterComponentPropsType extends filterListPropsType {
   changeSelectState(e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void;
   changeFirestFilterState(e: React.ChangeEvent<HTMLInputElement>): void;
   changeSecondFilterState(
@@ -26,8 +26,6 @@ export interface FilterPropsType2 extends FilterPropsType {
   selectState: boolean[];
   firestFilterState: boolean[];
   secondFilterState: boolean[];
-  // firestFilterValue: string;
-  // secondFilterValue: string[];
 }
 
 export interface filterDataType {

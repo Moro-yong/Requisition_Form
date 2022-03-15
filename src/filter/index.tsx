@@ -1,8 +1,8 @@
 import React from 'react';
 import { Filter as Presenter } from './Filter';
-import { FilterPropsType3 } from './Types';
+import { indexComponentPropsType } from './Types';
 
-export function Filter(props: FilterPropsType3) {
+export function Filter(props: indexComponentPropsType) {
   const {
     changeCounseling,
     toggleState,
@@ -11,11 +11,7 @@ export function Filter(props: FilterPropsType3) {
     secondFilterValue,
     setSecondFilterValue,
   } = props;
-  // =======================filter value 저장==========================
-  // const [firestFilterValue, setFirestFilterValue] = React.useState('가공방식');
-  // const [secondFilterValue, setSecondFilterValue] = React.useState(['재료']);
 
-  // =======================select on & off 로직=======================
   const [selectState, setSelectState] = React.useState([false, false]);
 
   const changeSelectState = (e: React.MouseEvent<HTMLElement>) => {
@@ -32,7 +28,6 @@ export function Filter(props: FilterPropsType3) {
     }
   };
 
-  // =======================checkbox 상태값 저장 로직=====================
   const [firestFilterState, setFirestFilterState] = React.useState([
     false,
     false,
@@ -76,7 +71,6 @@ export function Filter(props: FilterPropsType3) {
     }
   };
 
-  // =======================reset 로직=================================
   const resetFilter = () => {
     setFirestFilterState([false, false]);
     setSecondFilterState([false, false, false, false, false]);
@@ -84,7 +78,6 @@ export function Filter(props: FilterPropsType3) {
     setSecondFilterValue(['재료']);
     setFirestFilterValue('가공방식');
   };
-  // =================================================================
 
   return (
     <Presenter

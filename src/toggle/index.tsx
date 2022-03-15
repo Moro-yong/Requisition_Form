@@ -1,7 +1,7 @@
-import { FilterPropsType11 } from '../filter/Types';
+import { counselingPorpsType } from '../filter/Types';
 import * as S from './Toggle_style';
 
-export default function Toggle(props: FilterPropsType11) {
+export default function Toggle(props: counselingPorpsType) {
   const { changeCounseling, toggleState } = props;
 
   return (
@@ -16,32 +16,3 @@ export default function Toggle(props: FilterPropsType11) {
     </S.CheckBoxWrapper>
   );
 }
-
-// const [counselingState, setCounselingState] = useState([]);
-// const [counselingState1, setCounselingState1] = useState([{}]);
-// const [toggleState, setToggleState] = useState(false);
-// console.log(counselingState1);
-
-// const changeCounseling = () => {
-//   setToggleState(!toggleState);
-//   const data: dataType[] = [...counselingState];
-
-//   if (toggleState === true) {
-//     setCounselingState1([
-//       data[data.map(list => list.status).indexOf('상담중')],
-//     ]);
-//   }
-// };
-
-// useEffect(() => {
-//   getData();
-// }, []);
-
-// const getData = async () => {
-//   axios
-//     .get('http://localhost:9000/requests')
-//     .then(res => {
-//       setCounselingState(res.data);
-//     })
-//     .catch(error => console.log(error));
-// };

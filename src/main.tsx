@@ -10,7 +10,8 @@ export default function Main() {
   const [counselingState, setCounselingState] = useState([]);
   const [counselingStateFilter, setCounselingStateFilter] = useState([{}]);
   const [toggleState, setToggleState] = useState(false);
-  const [firestFilterValue, setFirestFilterValue] = useState<string>('');
+  const [firestFilterValue, setFirestFilterValue] =
+    useState<string>('가공방식');
   const [secondFilterValue, setSecondFilterValue] = useState<string[]>([
     '재료',
   ]);

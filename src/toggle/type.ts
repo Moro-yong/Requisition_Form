@@ -9,7 +9,3 @@ export interface dataType {
   material: string[];
   status: string;
 }
-export interface togglePropsType {
-  changeCounseling: () => void;
-  toggleState: boolean;
-}

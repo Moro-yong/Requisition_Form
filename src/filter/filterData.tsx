@@ -1,6 +1,6 @@
 import { filterDataType } from './Types';
 
-export const filterData: filterDataType[] = [
+export const processingMethodFilter: filterDataType[] = [
   {
     id: '1',
     name: '밀링',
@@ -11,7 +11,7 @@ export const filterData: filterDataType[] = [
   },
 ];
 
-export const filterData2: filterDataType[] = [
+export const materialFilter: filterDataType[] = [
   {
     id: '3',
     name: '알루미늄',

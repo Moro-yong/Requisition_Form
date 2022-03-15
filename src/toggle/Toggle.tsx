@@ -1,7 +1,7 @@
 import * as S from './Toggle_style';
-import { FilterPropsType } from '../filter/Types';
+import { filterListPropsType } from '../filter/Types';
 
-export function ToggleButton(props: FilterPropsType) {
+export function ToggleButton(props: filterListPropsType) {
   const { changeCounseling, toggleState } = props;
   return (
     <S.CheckBoxWrapper>

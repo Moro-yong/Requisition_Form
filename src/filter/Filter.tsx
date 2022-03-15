@@ -1,9 +1,9 @@
 import * as S from './Filter_style';
-import { filterData, filterData2 } from './filterData';
-import { FilterPropsType2 } from './Types';
+import { processingMethodFilter, materialFilter } from './filterData';
+import { filterComponentPropsType } from './Types';
 import Toggle from '../toggle';
 
-export function Filter(props: FilterPropsType2) {
+export function Filter(props: filterComponentPropsType) {
   const {
     changeSelectState,
     changeFirestFilterState,
@@ -49,7 +49,7 @@ export function Filter(props: FilterPropsType2) {
             </S.Button>
             {selectState[0] && (
               <S.Ul>
-                {filterData.map((list, index) => {
+                {processingMethodFilter.map((list, index) => {
                   const { id, name } = list;
                   return (
                     <S.Li key={index}>
@@ -80,7 +80,7 @@ export function Filter(props: FilterPropsType2) {
             </S.Button>
             {selectState[1] && (
               <S.Ul>
-                {filterData2.map((list, index) => {
+                {materialFilter.map((list, index) => {
                   const { id, name } = list;
                   return (
                     <S.Li key={index}>
