@@ -24,8 +24,7 @@
 **신청사항 Card & filter**
 - Card List & Filter 레이아웃 작성
 - select 옵션 내부 checkbox 추가
-- 반응형 레이아웃 작성
-- <br/>
+- 반응형 레이아웃 작성<br/><br/>
 
 - 필터 select 옵션리스트 on & off 함수 및 state 작성
 - useState를 사용하여 가공방식 필터 중 한 가지만 선택되도록 함수를 작성하였습니다.
